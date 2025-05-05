@@ -1,0 +1,73 @@
+@import url('http://www.fonts.google.com/specimen/Roboto');
+/* Newsletter styling */
+:root {
+  --Mobile: 375px;
+  --Desktop: 1440px;
+  --Tomato-color: hsl(4,100%,67%);
+  --Neutral-dark-slate-grey: hsl(234, 29%, 20%);
+  --Neutral-charcoal-grey: hsl(235, 18%, 26%);
+  --Neutral-grey: hsl(231, 7%, 60%);
+  --Neutral-white: hsl(0, 0%, 100%);
+/* Body copy Paragraph*/
+  --Typography-body-copy-font-size: 16px;    
+/*Font*/
+  --Roboto: 'Roboto', sans-serif;  
+  --font-weights: 400, 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+background-color: var(--Neutral-dark-slate-grey);
+font-family: var(--Roboto);
+}
+
+#container {
+  column-count: 2;
+  background-color: var(--Neutral-white);
+  border-radius: 2em;
+  padding: 15px;
+  margin: 15px;
+}
+
+.list {
+  padding: 23px;
+  margin: 5px;
+  list-style: none;
+}
+
+email input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(---Neutral-charcoal-grey);
+}
+
+/* Success page styling */
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.success-pop-up {
+  background-color: var(--Neutral-white);
+  padding: 1em;
+  margin: 15px;
+  width: 25%;
+  border-radius: 20px; 
+}
+
+.success-pop-up button {
+  background-color: var(--Tomato-color);
+  color: var(--Neutral-white);
+  padding: 10px;
+  border-radius: 7px;
+  width: 60%;
+  font-size: var(--Typography-body-copy-font-size);
+  cursor: pointer;
+}
