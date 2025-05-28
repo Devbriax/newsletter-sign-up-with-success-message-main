@@ -1,4 +1,4 @@
-@import url('http://www.fonts.google.com/specimen/Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Newsletter styling */
 :root {
   --Mobile: 375px;
@@ -22,7 +22,7 @@
 }
 
 body {
-background-color: var(--Neutral-dark-slate-grey);
+background-color: var(--Neutral-charcoal-grey);
 font-family: var(--Roboto);
 }
 
@@ -34,6 +34,78 @@ font-family: var(--Roboto);
 
 .content-container {
   display: flex;
+  background-color: var(--Neutral-white);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1em;
+}
+
+.content {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.content h1 {
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.content p {
+  padding: 1px;
+  margin: 2px;
+}
+
+#text-block {
+  padding: 2em;
+}
+
+form {
+  padding: 1em;
+  margin: 1px;
+}
+
+form input[type="email"] {
+ width: 90%;
+ height: 15px;
+ border: 1px solid;
+ padding: 1em;
+ margin: 0.5em;
+}
+
+form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--Tomato-color);
+}
+
+form input[type="email"]:hover {
+  border-color: var(--Tomato-color);
+}
+
+form input[type="email"]::placeholder {
+  color: var(--Neutral-grey);
+}
+
+form input[type="email"]:focus::placeholder {
+  color: var(--Neutral-dark-slate-grey);
+}
+
+form button {
+  padding: 1em;
+  margin-top: 1em;
+  width: 99%;
+  height: auto;
+  background-color: var(--Neutral-dark-slate-grey);
+  color: var(--Neutral-white);
+  font-weight: bold;
+  font-size: var(--Typography-body-copy-font-size);
+  border-radius: 1em;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.form-illustration-image {
+  padding: 1em;
+  margin: 1em;
 }
 
 /* Success page styling */
